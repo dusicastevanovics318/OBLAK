@@ -1,7 +1,6 @@
-curl --location --request POST 'https://getpantry.cloud/apiv1/pantry/bfab2361-7ccc-44d6-8212-62e1b30b244a/basket/dusicaraf' 
---header 'Content-Type: application/json' 
---data-raw 
+#!/bin/ash
 
+curl --location --request POST 'https://getpantry.cloud/apiv1/pantry/bfab2361-7ccc-44d6-8212-62e1b30b244a/basket/dusicaraf' --header 'Content-Type: application/json' --data-raw '
 {
 "id": "1abcd1",
 "ime": "dusica",
@@ -18,4 +17,5 @@ curl --location --request POST 'https://getpantry.cloud/apiv1/pantry/bfab2361-7c
 "mesto": "beograd",
 "telefon": "060123456"
 }
-}
+}'
+
