@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Job
+metadata:
+  name: domaci2
+  namespace: domaci2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      zadatak: dva
+  template:
+    metadata:
+      labels:
+        zadatak: 
+    spec:
+      containers:
+      - name: dusica_stevanovic_318s
+        image: domaci2:1.1
